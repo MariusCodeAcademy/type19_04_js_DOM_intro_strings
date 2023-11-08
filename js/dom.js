@@ -33,5 +33,20 @@ pIntroEl.style.lineHeight = 1;
 pIntroEl.className = 'dynamic';
 
 // pakeisti <li id="pirma">red</li> spalva
+// nusitaikom i el
+const liElSpalva = document.getElementById('pirma');
+// keisti jo tektas su textContent
+liElSpalva.textContent = 'yellow';
+liElSpalva.style.background = 'yellow';
 // gauti nuoroda i sarasa <ul id="color-list"> su document.getElementById ir su document.querySelector();
+const listCol = document.getElementById('color-list');
+console.log('listCol ===', listCol);
+const listSelector = document.querySelector('#color-list');
+console.log('listSelector ===', listSelector);
 // gauti visus li su document.querySelectorAll();
+
+const lis = document.querySelectorAll('#color-list > li');
+console.log('lis ===', lis);
+
+const h1El = document.querySelector('.main-title');
+console.log('h1El ===', h1El);
