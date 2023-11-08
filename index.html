@@ -7,6 +7,15 @@
   <title>DOM</title>
   <!-- <script src="js/dom.js" defer></script> -->
   <script src="js/innerHtml.js" defer></script>
+  <style>
+    li:last-child {
+      /* background-color: blue; */
+    }
+
+    li:nth-child(2) {
+      /* background-color: tomato; */
+    }
+  </style>
 </head>
 
 <body>
@@ -14,12 +23,17 @@
 
   <p class="was" id="intro">This is intro</p>
 
+  <div id="output"></div>
+
   <button onclick="console.count('papaudei')">CLick</button>
+
+
 
   <ul id="color-list">
     <li id="pirma">red</li>
     <li>green</li>
     <li>blue</li>
+    <li>violet</li>
   </ul>
 
 </body>
