@@ -21,8 +21,8 @@ ulEl.innerHTML = '';
 let resultLis = '';
 
 for (let i = 0; i < 10; i++) {
-  ulEl.innerHTML = ulEl.innerHTML + `<li>violet ${i}</li>`;
-  // resultLis = resultLis + `<li>violet ${i}</li>`;
+  // ulEl.innerHTML = ulEl.innerHTML + `<li>violet ${i}</li>`;
+  resultLis = resultLis + `<li>violet ${i}</li>`;
 }
 console.log('resultLis ===', resultLis);
 // ulEl.innerHTML = resultLis;
@@ -30,3 +30,17 @@ console.log('resultLis ===', resultLis);
 // sudeti skaicius nuo 1 iki 10
 // irastyi i html rezultata
 // irasyti kiekvieno zingsnio suma
+
+let sum = 0;
+let liGenerate = '';
+for (let i = 1; i <= 10; i++) {
+  // let sum = 0;
+  let tarpineSuma = sum + i;
+  let stringInfo = `ciklas: ${i})  ${sum} + ${i} = ${tarpineSuma}`;
+  liGenerate += `<li>${stringInfo}</li>`;
+  console.log(stringInfo);
+  sum = tarpineSuma;
+  // console.log('i ===', i);
+}
+console.log('liGenerate ===', liGenerate);
+ulEl.innerHTML = liGenerate;
